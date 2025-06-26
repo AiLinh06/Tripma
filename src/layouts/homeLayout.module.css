@@ -28,7 +28,7 @@
   white-space: pre-line;
   margin: 0;
   padding: 0;
-  background: linear-gradient(90deg, #6B46C1, #605DEC); /* Gradient from purple to pink */
+  background: linear-gradient(90deg,#605DEC, #6B46C1 ); /* Gradient from purple to pink */
   -webkit-background-clip: text; /* For Webkit browsers (Chrome, Safari) */
   background-clip: text; /* Standard property */
   color: transparent;
