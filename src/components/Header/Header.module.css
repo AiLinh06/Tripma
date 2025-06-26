@@ -10,10 +10,15 @@
 }
 
 .promo {
-  font-size: 18px;
+  font-size: 22px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  max-width: 80%; 
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 300;
 }
 
 .close {
