@@ -10,7 +10,7 @@ const Navigation = () => {
         <a href="#hotels">Hotels</a>
         <a href="#packages">Packages</a>
         <a href="#signin">Sign in</a>
-        <a href="#signup" className={styles.signup}>Sign up</a>
+        <button className={styles.signup} type="button">Sign up</button>
       </div>
     </div>
   );

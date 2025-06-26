@@ -6,7 +6,7 @@
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 35px;
   color: #6B46C1;
   font-weight: bold;
 }
@@ -15,7 +15,9 @@
   margin: 0 15px;
   color: #605DEC;
   text-decoration: none;
-  font-size: 25px; 
+  font-size: 22px; 
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-weight: 400;
 }
 
 .menu .signup {
@@ -24,5 +26,7 @@
   padding: 15px 15px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 22px; 
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-weight: 400;
 }
