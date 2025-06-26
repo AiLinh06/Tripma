@@ -1,0 +1,135 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 550px;
+  height: 670px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  color: #6d6868;
+  padding-left: 10px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+p{
+  font-size: 18px;
+  color: #6d6868;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: -240px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 14px 8px; 
+  padding-left: 10px;
+  padding-right: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-color: #918787;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-account-btn {
+  background: #6b48ff;
+  color: white;
+  padding: 18px 10px; 
+  font-size: 18px;
+}
+
+.google-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 18px 10px; 
+  font-size: 18px;
+}
+
+.apple-btn {
+  background: #000;
+  color: white;
+  padding: 18px 10px; 
+  font-size: 18px;
+}
+
+.facebook-btn {
+  background: #1877f2;
+  color: white;
+  padding: 18px 10px; 
+  font-size: 18px;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 10px 0;
+  color: #666;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  gap: 8px;
+  flex-direction: row;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 0px;
+}
+
+.checkbox-label span {
+  font-size: 16px;
+  color: #6d6868;
+}
+
+.checkbox-wrapper {
+  margin-right: 0; /* or margin-right depending on layout */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+

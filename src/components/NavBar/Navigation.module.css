@@ -22,11 +22,12 @@
 
 .menu .signup {
   background-color: #6B46C1;
-  color: white;
-  padding: 15px 15px;
+  color: rgb(233, 224, 224);
+  padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 22px; 
+  font-size: 20px; 
   font-family: 'Nunito Sans', Arial, sans-serif;
   font-weight: 400;
+    width: fit-content; 
 }
