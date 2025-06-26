@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './SearchBar.module.css';
-import departureIcon from './assets/departure.png';
-import arrivalIcon from './assets/arrival.png';
-import calendarIcon from './assets/calendar with dates.png';
-import personIcon from './assets/person solid.png';
+import departureIcon from '../../assets/departure.png';
+import arrivalIcon from '../../assets/arrival.png';
+import calendarIcon from '../../assets/calendar with dates.png';
+import personIcon from '../../assets/person solid.png';
 
 const SearchBar = () => {
   return (

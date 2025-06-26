@@ -1,0 +1,35 @@
+.app {
+  font-family: Arial, sans-serif;
+  background: url('../assets/world-map.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  min-height: 100vh;
+}
+
+.homeLayout {
+  text-align: center;
+}
+
+.textContainer {
+  width: 100vw;
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 160px auto 60px auto;
+}
+
+.centeredText {
+  font-size: 110px;
+  color: #6B46C1;
+  font-weight: bold;
+  text-align: center;
+  white-space: pre-line;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #6B46C1, #605DEC); /* Gradient from purple to pink */
+  -webkit-background-clip: text; /* For Webkit browsers (Chrome, Safari) */
+  background-clip: text; /* Standard property */
+  color: transparent;
+}

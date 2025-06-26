@@ -1,20 +1,9 @@
 import React from 'react';
+import HomePage from './pages/homePage';
 import styles from './App.module.css';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
-import SearchBar from './components/SearchBar';
 
 function App() {
-  return (
-    <div className={styles.app}>
-      <Header />
-      <Navigation />
-      <div className={styles.textContainer}>
-        <div className={styles.centeredText}>It's more than <br />just a trip</div>
-      </div>
-      <SearchBar />
-    </div>
-  );
+  return <div className={styles.app}><HomePage /></div>;
 }
 
 export default App;
