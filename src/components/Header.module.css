@@ -1,0 +1,22 @@
+.header {
+  background-color: #605DEC;
+  color: white;
+  padding: 12px 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 40px;
+}
+
+.promo {
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close {
+  cursor: pointer;
+  font-size: 20px;
+}

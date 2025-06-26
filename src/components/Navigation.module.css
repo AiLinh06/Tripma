@@ -1,0 +1,28 @@
+.nav {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  color: #6B46C1;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 15px;
+  color: #605DEC;
+  text-decoration: none;
+  font-size: 25px; 
+}
+
+.menu .signup {
+  background-color: #6B46C1;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px; 
+}

@@ -1,0 +1,37 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.searchBar {
+  display: flex;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: stretch;
+  width: 1100px;
+  max-width: 95vw;
+}
+
+.searchBar input {
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.searchBtn {
+  padding: 0 28px;
+  background-color: #6B46C1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 60px;
+  min-height: 50px;
+  font-size: 24px;
+}
