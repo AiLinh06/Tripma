@@ -3,7 +3,7 @@
   background: url('../assets/world-map.png') no-repeat center center fixed;
   background-size: cover;
   color: #333;
-  min-height: 100vh;
+  min-height: 180vh;
 }
 
 .homeLayout {
