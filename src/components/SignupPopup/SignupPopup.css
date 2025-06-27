@@ -95,6 +95,7 @@ button {
   border-radius: 4px;
   margin-bottom: 10px;
   transition: background 0.2s, color 0.2s;
+  
 }
 
 .google-btn:hover,
@@ -102,6 +103,16 @@ button {
 .facebook-btn:hover {
   background: #605DEC;
   color: #fff;
+}
+
+.google-btn img,
+.apple-btn img,
+.facebook-btn img {
+  margin-left: -4px;    
+  margin-right: 10px;
+  vertical-align: middle;
+  position: static;
+  display: inline-block;
 }
 
 .or-divider {
