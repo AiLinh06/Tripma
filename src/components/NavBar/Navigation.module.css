@@ -20,6 +20,17 @@
   font-weight: 400;
 }
 
+.menu a[href="#flights"] {
+  color: #605DEC;
+  font-weight: 700;
+}
+
+.menu a[href="#hotels"],
+.menu a[href="#packages"],
+.menu a[href="#signin"] {
+  color: #7C8DB0;
+}
+
 .menu .signup {
   background-color: #6B46C1;
   color: rgb(233, 224, 224);
