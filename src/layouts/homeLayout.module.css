@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   margin: 160px auto 60px auto;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .centeredText {
@@ -29,7 +29,7 @@
   white-space: pre-line;
   margin: 0;
   padding: 0;
-  background: linear-gradient(90deg,#605DEC, #6B46C1 ); /* Gradient from purple to pink */
+  background: linear-gradient(90deg,#524fe1, #9b80da ); /* Gradient */
   -webkit-background-clip: text; /* For Webkit browsers (Chrome, Safari) */
   background-clip: text; /* Standard property */
   color: transparent;

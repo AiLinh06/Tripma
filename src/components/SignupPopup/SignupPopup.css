@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  z-index: 9999;
 }
 
 .popup-content {
@@ -20,6 +20,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  
 }
 h2 {
   color: #6d6868;
