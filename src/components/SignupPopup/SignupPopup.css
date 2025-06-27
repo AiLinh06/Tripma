@@ -16,7 +16,7 @@
   padding: 20px;
   border-radius: 8px;
   width: 550px;
-  height: 670px;
+  height: 720px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -61,6 +61,11 @@ input {
   border-color: #918787;
 }
 
+input::placeholder {
+  font-size: 20px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
 button {
   width: 100%;
   padding: 10px;
@@ -77,25 +82,25 @@ button {
   font-size: 18px;
 }
 
-.google-btn {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 18px 10px; 
-  font-size: 18px;
-}
-
-.apple-btn {
-  background: #000;
-  color: white;
-  padding: 18px 10px; 
-  font-size: 18px;
-}
-
+.google-btn,
+.apple-btn,
 .facebook-btn {
-  background: #1877f2;
-  color: white;
-  padding: 18px 10px; 
+  background: #fff;
+  color: #605DEC;
+  border: 2px solid #605DEC;
+  padding: 18px 10px;
   font-size: 18px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.google-btn:hover,
+.apple-btn:hover,
+.facebook-btn:hover {
+  background: #605DEC;
+  color: #fff;
 }
 
 .or-divider {

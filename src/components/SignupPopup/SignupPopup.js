@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './SignupPopup.css';
+import googleIcon from '../../assets/google.png';
+import appleIcon from '../../assets/apple mac.png';
+import facebookIcon from '../../assets/facebook.png';
 
 const SignupPopup = ({ onClose }) => {
   const [email, setEmail] = useState('');
@@ -60,9 +63,30 @@ const SignupPopup = ({ onClose }) => {
           <button type="submit" className="create-account-btn">Create account</button>
         </form>
         <div className="or-divider">or</div>
-        <button className="google-btn">Continue with Google</button>
-        <button className="apple-btn">Continue with Apple</button>
-        <button className="facebook-btn">Continue with Facebook</button>
+        <button className="google-btn">
+          <img
+            src={googleIcon}
+            alt="Google"
+            style={{ width: '24px', height: '24px', marginRight: '10px', verticalAlign: 'middle' }}
+          />
+          Continue with Google
+          </button>
+        <button className="apple-btn">
+          <img
+            src={appleIcon}
+            alt="Apple"
+            style={{ width: '24px', height: '24px', marginRight: '10px', verticalAlign: 'middle' }}
+          />
+          Continue with Apple
+        </button>
+        <button className="facebook-btn">
+          <img
+            src={facebookIcon}
+            alt="Facebook"
+            style={{ width: '24px', height: '24px', marginRight: '10px', verticalAlign: 'middle' }}
+          />
+          Continue with Facebook
+        </button>
       </div>
     </div>
   );
