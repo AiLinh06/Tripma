@@ -1,5 +1,9 @@
 /* src/components/DealsSection/DealsSection.css */
 
+body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-info h3, .deal-info p, .deal-info strong, .deal-title-row, .deal-title-row h3, .deal-title-row strong {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
 .deals-section {
   padding: 40px 60px;
   background-color: #f8f9fd;
@@ -24,15 +28,18 @@
 }
 
 .see-all {
-  font-size: 14px;
+  font-size: 20px;
   color: #605DEC;
   text-decoration: none;
 }
 
 .deals-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 60px; 
+  margin: 0 auto;
+  max-width: 1700px;
 }
 
 .deal-card {
@@ -41,6 +48,35 @@
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   transition: transform 0.2s ease;
+  height: 540px;          
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.deal-card:last-child {
+  grid-column: 1 / -1;
+  aspect-ratio: unset;
+  display: flex;
+  flex-direction: column;
+  height: 520px; 
+  width: 100%;
+}
+
+.deal-card:last-child img {
+  width: 100%;
+  height: 70%;        
+  object-fit: cover;
+  display: block;
+}
+
+.deal-card:last-child .deal-info {
+  height: 30%;        
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .deal-card:hover {
@@ -49,27 +85,60 @@
 
 .deal-card img {
   width: 100%;
-  height: 180px;
+  height: 80%;
   object-fit: cover;
+  display: block;
 }
 
 .deal-info {
-  padding: 16px;
+  height: 20%;             
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .deal-info h3 {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0 0 4px;
   color: #333;
 }
 
 .deal-info p {
-  font-size: 14px;
+  font-size: 18px;
   color: #666;
   margin: 0 0 8px;
 }
 
 .deal-info strong {
   color: #000;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+.deal-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; 
+  padding-left: 10px; 
+}
+
+.deal-title-row h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 400;
+}
+
+.deal-title-row strong {
+  color: #000;
+  font-size: 20px;
+  margin-left: 0; 
+  padding-right: 24px; 
+  font-weight: 400;
+}
+
+.deal-info h3,
+.deal-info strong {
+  font-weight: 400;
 }

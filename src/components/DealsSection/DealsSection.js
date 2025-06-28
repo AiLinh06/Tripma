@@ -45,9 +45,11 @@ const DealsSection = () => {
           <div className="deal-card" key={index}>
             <img src={deal.image} alt={deal.title} />
             <div className="deal-info">
-              <h3>{deal.title}</h3>
+              <div className="deal-title-row">
+                <h3>{deal.title}</h3>
+                <strong>{deal.price}</strong>
+              </div>
               <p>{deal.description}</p>
-              <strong>{deal.price}</strong>
             </div>
           </div>
         ))}
