@@ -5,9 +5,9 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
 }
 
 .deals-section {
-  padding: 50px 100px;
+  padding: 50px 60px;
   background-color: #f8f9fd;
-  margin-top: 0;
+  margin-top: 400px;
   margin-bottom: 0;
 }
 
