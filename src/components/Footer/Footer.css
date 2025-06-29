@@ -9,7 +9,7 @@
   padding: 40px 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   min-height: 10vh;
   position: relative;
 }
@@ -42,30 +42,31 @@
   text-align: left;
   color: #605dec;
   margin-right: 1500px;
-  font-weight: 900;
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .footer-columns {
   display: flex;
   flex-wrap: wrap;
   gap: 200px;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: -80px;
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 14px;
 }
 
 .footer-column h4 {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
   margin-bottom: 12px;
   color: #333;
   text-align: left;
-  margin-left: -30px;
 }
 
 .footer-column ul {
@@ -77,12 +78,13 @@
 
 .footer-column ul li {
   margin-bottom: 8px;
+  font-size: 20px;
 }
 
 .footer-column ul li a {
+  font-size: 20px;
   text-decoration: none;
   color: #666;
-  font-size: 13px;
 }
 
 .footer-column ul li a:hover {
@@ -115,7 +117,7 @@
 .partner-column {
   align-items: flex-start;
   position: relative;
-  top: -55px;
+  top: -75px;
 }
 
 .partner-column h4,
@@ -127,7 +129,7 @@
 .support-column {
   align-items: flex-start;
   position: relative;
-  top: -55px;
+  top: -75px;
 }
 
 .support-column h4,
@@ -139,7 +141,7 @@
 .about-column {
   align-items: flex-start;
   position: relative;
-  top: -50px;
+  top: -70px;
 }
 
 .about-column h4,
@@ -151,7 +153,7 @@
 .app-column {
   align-items: flex-start;
   position: relative;
-  top: -55px
+  top: -75px
 }
 
 .app-column h4,
