@@ -45,6 +45,16 @@ const Testimonials = () => {
                   <span>{t.location}</span>
                 </div>
               </div>
+              <img
+                className="rating"
+                src={
+                  index === 1
+                    ? require('../../assets/star row-1.png')
+                    : require('../../assets/star row.png')
+                }
+                alt="rating"
+                style={{ margin: '0 0 8px 0', width: '120px', height: 'auto' }}
+              />
               <p className="testimonial-text">“{t.text}”</p>
             </div>
           );
