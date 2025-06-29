@@ -14,7 +14,7 @@ const stays = [
     image: require('../../assets/morocco.png'),
   },
   {
-    title: 'Live traditionally in a Mongolian ger',
+    title: 'Live traditionally in a Mongolian',
     description: 'Traditional Mongolian yurts consists of an angled latticework of wood or bamboo for walls, ribs, and a wheel.',
     image: require('../../assets/mongolia.png'),
   },
