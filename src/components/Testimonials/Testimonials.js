@@ -25,15 +25,30 @@ const Testimonials = () => {
     <section className="testimonials-section">
       <h2>What Tripma users are saying</h2>
       <div className="testimonials-grid">
-        {testimonials.map((t, index) => (
-          <div key={index} className="testimonial-card">
-            <p className="testimonial-text">“{t.text}”</p>
-            <div className="testimonial-user">
-              <strong>{t.name}</strong>
-              <span>{t.location}</span>
+        {testimonials.map((t, index) => {
+          // Map avatar images from assets
+          const avatarImages = [
+            require('../../assets/avatar.png'),
+            require('../../assets/avatar2.png'),
+            require('../../assets/avatar1.png'),
+          ];
+          return (
+            <div key={index} className="testimonial-card">
+              <div className="testimonial-user">
+                <img
+                  className="testimonial-avatar"
+                  src={avatarImages[index]}
+                  alt={t.name + ' avatar'}
+                />
+                <div className="testimonial-user-info">
+                  <strong>{t.name}</strong>
+                  <span>{t.location}</span>
+                </div>
+              </div>
+              <p className="testimonial-text">“{t.text}”</p>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
