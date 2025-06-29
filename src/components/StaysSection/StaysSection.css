@@ -5,9 +5,9 @@ body, .stays-section, .stays-header, .see-all, .stay-card, .stay-info, .stay-inf
 }
 
 .stays-section {
-  padding: 40px 60px;
+  padding: 10px 60px;
   background-color: #f8f9fd;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 .stays-header {
