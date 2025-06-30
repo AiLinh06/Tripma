@@ -173,7 +173,7 @@ const SearchBar = () => {
                 selectsRange={tripType === 'round-trip'}
                 shouldCloseOnSelect={tripType === 'one-way' ? true : false}
               />
-              <button style={{ marginTop: 8, width: '100%' }} onClick={() => setShowDatePicker(false)}>Done</button>
+              <button className="datepicker-done-btn" onClick={() => setShowDatePicker(false)}>Done</button>
             </div>
           )}
         </div>
