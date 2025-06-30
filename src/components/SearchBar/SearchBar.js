@@ -19,6 +19,9 @@ const SearchBar = () => {
   const [tripType, setTripType] = useState('one-way');
   const [departDate, setDepartDate] = useState(null);
   const [returnDate, setReturnDate] = useState(null);
+  const [showPersonPopup, setShowPersonPopup] = useState(false);
+  const [adults, setAdults] = useState(1);
+  const [minors, setMinors] = useState(0);
 
   const filterAirports = (value) =>
     airportList.filter((a) => a.toLowerCase().includes(value.toLowerCase()));
@@ -71,6 +74,18 @@ const SearchBar = () => {
         return '';
       }
     }
+  };
+
+  const getPersonInputValue = () => {
+    return `${adults} Adult${adults !== 1 ? 's' : ''}${minors > 0 ? `, ${minors} Minor${minors !== 1 ? 's' : ''}` : ''}`;
+  };
+
+  const handleAdultChange = (delta) => {
+    setAdults(prev => Math.max(0, prev + delta));
+  };
+
+  const handleMinorChange = (delta) => {
+    setMinors(prev => Math.max(0, prev + delta));
   };
 
   return (
@@ -181,9 +196,38 @@ const SearchBar = () => {
         <div style={{ borderLeft: '2px solid #e0e0e0', height: 40, margin: '0 12px' }} />
 
         {/* Person */}
-        <div style={{ display: 'flex', alignItems: 'center', marginLeft: 8 }}>
-          <img src={personIcon} alt="Person" style={{ width: 38, height: 38, marginRight: 10 }} />
-          <input type="text" placeholder="1 adult" />
+        <div style={{ display: 'flex', alignItems: 'center', marginLeft: 8, position: 'relative' }}>
+          <img
+            src={personIcon}
+            alt="Person"
+            style={{ width: 38, height: 38, marginRight: 10, cursor: 'pointer' }}
+            onClick={() => setShowPersonPopup(true)}
+          />
+          <input
+            type="text"
+            placeholder="1 Adult"
+            value={getPersonInputValue()}
+            readOnly
+            style={{ width: 100 }}
+            onClick={() => setShowPersonPopup(true)}
+          />
+          {showPersonPopup && (
+            <div style={{ position: 'absolute', zIndex: 10, top: 50, left: 0, background: '#fff', boxShadow: '0 2px 8px rgba(0,0,0,0.15)', borderRadius: 8, padding: 16 }}>
+              <div style={{ marginBottom: 8 }}>
+                <label>Adults:</label>
+                <button onClick={() => handleAdultChange(-1)}>-</button>
+                <span style={{ margin: '0 10px' }}>{adults}</span>
+                <button onClick={() => handleAdultChange(1)}>+</button>
+              </div>
+              <div>
+                <label>Minors:</label>
+                <button onClick={() => handleMinorChange(-1)}>-</button>
+                <span style={{ margin: '0 10px' }}>{minors}</span>
+                <button onClick={() => handleMinorChange(1)}>+</button>
+              </div>
+              <button style={{ marginTop: 10 }} onClick={() => setShowPersonPopup(false)}>Done</button>
+            </div>
+          )}
         </div>
 
         <button className={styles.searchBtn}>Search</button>
