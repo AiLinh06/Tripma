@@ -1,0 +1,64 @@
+/* src/components/FlightSection/FlightSection.css */
+
+body, .flights-section, .flights-header, .see-all, .flight-card, .flight-info, .flight-info h3, .flight-info p, .flight-info strong, .flight-title-row, .flight-title-row h3, .flight-title-row strong {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
+.flights-section {
+  padding: 50px 60px;
+  background-color: #f8f9fd;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.flights-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flights-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.flights-header .highlight {
+  color: #605DEC;
+}
+
+.see-all {
+  font-size: 20px;
+  color: #605DEC;
+  text-decoration: none;
+}
+
+.flights-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 60px; 
+  margin: 0 auto;
+  max-width: 1700px;
+}
+
+.flight-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+  height: 540px;          
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.flight-card:last-child {
+  grid-column: 1 / -1;
+  aspect-ratio: unset;
+  display: flex;
+  flex-direction: column;
+}
