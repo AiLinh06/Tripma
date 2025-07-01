@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './SearchBar.module.css';
 import departureIcon from '../../assets/departure.png';
 import arrivalIcon from '../../assets/arrival.png';
@@ -22,6 +23,7 @@ const SearchBar = () => {
   const [showPersonPopup, setShowPersonPopup] = useState(false);
   const [adults, setAdults] = useState(1);
   const [minors, setMinors] = useState(0);
+  const navigate = useNavigate();
 
   const filterAirports = (value) =>
     airportList.filter((a) => a.toLowerCase().includes(value.toLowerCase()));
@@ -86,6 +88,10 @@ const SearchBar = () => {
 
   const handleMinorChange = (delta) => {
     setMinors(prev => Math.max(0, prev + delta));
+  };
+
+  const handleSearchClick = () => {
+    navigate('/flights');
   };
 
   return (
@@ -230,7 +236,7 @@ const SearchBar = () => {
           )}
         </div>
 
-        <button className={styles.searchBtn}>Search</button>
+        <button className={styles.searchBtn} onClick={handleSearchClick}>Search</button>
       </div>
     </div>
   );
