@@ -5,7 +5,7 @@ import FlightSection from '../components/FlightSection/FlightSection';
 import DealsSection from '../components/DealsSection/DealsSection';
 import StaysSection from '../components/StaysSection/StaysSection';
 import Footer from '../components/Footer/Footer';
-
+import styles from './FlightLayout.module.css';
 
 
 function FlightLayout({ disableScroll }) {
@@ -19,7 +19,9 @@ function FlightLayout({ disableScroll }) {
   return (
     <div>
       <Navigation />
-      <SearchBar />
+      <div className={styles.SearchBarWrapper}>
+        <SearchBar />
+      </div>
       <FlightSection />
       <DealsSection />
       <StaysSection />
