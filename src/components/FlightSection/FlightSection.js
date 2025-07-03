@@ -28,7 +28,7 @@ const flights = [
     arrivalTime: '11:30 AM',
     duration: '2h 30m',
     price: '$110',
-    stop: 'Non-stop',
+    stop: 'Nonstop',
   },
   {
     airlineLogo: require('../../assets/united airlines.png'),
@@ -37,7 +37,7 @@ const flights = [
     arrivalTime: '2:00 PM',
     duration: '3h 30m',
     price: '$150',
-    stop: 'Non-stop',
+    stop: 'Nonstop',
   },
 ];
 

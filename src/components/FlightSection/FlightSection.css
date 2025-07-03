@@ -93,15 +93,28 @@ h2{
   width: 100%;
 }
 
-.flight-time, .flight-price, .flight-stop {
+.flight-time{
   font-size: 20px;
-  margin-right: 24px;
+  margin-left: 80px;
   color: #333;
-  padding-left: 70px;
+
 }
 
 .flight-stop {
   color: #000000;
   font-weight: lighter;
-  margin-right: 0;
+  margin-left: auto;
+  padding-left: 100px;
+  font-size: 20px;
+}
+
+
+.flight-price {
+  font-size: 20px;;
+  color: #333;
+  padding-left: 120px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 30px;
+
 }
