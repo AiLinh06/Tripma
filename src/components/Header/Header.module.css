@@ -25,3 +25,21 @@
   cursor: pointer;
   font-size: 20px;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .promo {
+    font-size: 18px;
+    white-space: normal;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo {
+    font-size: 14px;
+  }
+}

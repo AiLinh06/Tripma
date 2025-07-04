@@ -42,3 +42,37 @@
   font-weight: 400;
     width: fit-content; 
 }
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .menu a {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .menu .signup {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}

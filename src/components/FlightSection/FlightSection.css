@@ -121,3 +121,59 @@ h2{
   margin-right: 30px;
 
 }
+
+@media (max-width: 768px) {
+  .flights-section {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    padding-left: 0;
+    padding-top: 150px;
+    text-align: center;
+  }
+
+  .flights-grid {
+    padding-right: 0;
+    gap: 20px;
+  }
+
+  .flight-card {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  .flight-details {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .airline-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .flight-time, .flight-stop, .flight-price, .flight-card .flight-duration {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .flights-header h2 {
+    font-size: 20px;
+  }
+
+  .flight-card {
+    padding: 15px;
+  }
+
+  .flight-time, .flight-stop, .flight-price, .flight-card .flight-duration {
+    font-size: 16px;
+  }
+}

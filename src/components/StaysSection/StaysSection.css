@@ -111,3 +111,46 @@ body, .stays-section, .stays-header, .see-all, .stay-card, .stay-info, .stay-inf
 .explore-more-btn:hover {
   background-color: #4a48d1;
 }
+
+@media (max-width: 768px) {
+  .stays-section {
+    padding: 30px 20px;
+  }
+
+  .stays-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stays-grid {
+    gap: 30px;
+  }
+
+  .stay-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .stays-header h2 {
+    font-size: 20px;
+  }
+
+  .see-all {
+    font-size: 18px;
+  }
+
+  .stay-card {
+    height: auto;
+  }
+
+  .stay-card img {
+    height: 200px;
+  }
+
+  .explore-more-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+}

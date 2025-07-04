@@ -143,3 +143,42 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
 .deal-info strong {
   font-weight: 400;
 }
+
+@media (max-width: 768px) {
+  .deals-section {
+    padding: 30px 20px;
+    margin-top: 200px;
+  }
+
+  .deals-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .deals-grid {
+    gap: 30px;
+  }
+
+  .deal-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .deals-header h2 {
+    font-size: 20px;
+  }
+
+  .see-all {
+    font-size: 18px;
+  }
+
+  .deal-card {
+    height: auto;
+  }
+
+  .deal-card img {
+    height: 200px;
+  }
+}

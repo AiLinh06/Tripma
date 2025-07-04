@@ -82,3 +82,27 @@
 .testimonials-section, .testimonials-section *, .testimonials-grid, .testimonial-card, .testimonial-text, .testimonial-user, .testimonial-user strong, .testimonial-user span, .testimonial-avatar, .testimonial-user-info {
   font-family: 'Nunito Sans', Arial, sans-serif;
 }
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 40px 20px;
+  }
+
+  .testimonials-grid {
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-section h2 {
+    font-size: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+  }
+}
