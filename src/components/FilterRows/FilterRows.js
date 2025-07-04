@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FilterRow.css';
+import './FilterRows.css';
 
 const FilterRow = () => {
   const [maxPrice, setMaxPrice] = useState('');

@@ -1,8 +1,11 @@
 .filter-row {
   display: flex;
-  gap: 10px;
+  gap: 50px;
   padding: 10px;
   background-color: #f9f9f9;
+  padding-left: 80px;
+  height: 50px;
+
 }
 
 .filter-row select {
