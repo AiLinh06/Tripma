@@ -24,10 +24,11 @@
 }
 h2 {
   color: #6d6868;
-  padding-left: 10px;
+  margin-left: -90px;
   font-family: 'Nunito Sans', Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
+  margin-top: -130px
 }
 p{
   font-size: 18px;
