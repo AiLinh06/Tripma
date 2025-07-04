@@ -55,18 +55,21 @@ h2{
 
 .flight-card {
   background: #fff;
-  border-radius: 12px;
+  border: 1px solid #eee;
   overflow: hidden; 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   transition: transform 0.2s ease;
   height: 100px;
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 24px;
+  padding: 14px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  margin-bottom: -50px;
+
 }
 
 .airline-logo {
