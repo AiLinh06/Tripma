@@ -6,8 +6,8 @@ export default function HomePage() {
   
 
   return (
-    <HomeLayout>123
-
+    <HomeLayout>
+      Hello
     </HomeLayout>
   );
 }
