@@ -6,7 +6,7 @@ export default function HomePage() {
   
 
   return (
-    <HomeLayout>
+    <HomeLayout1>
 
     </HomeLayout>
   );
