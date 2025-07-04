@@ -151,3 +151,44 @@ button {
   align-items: flex-start;
 }
 
+@media (max-width: 768px) {
+  .popup-content {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+  }
+
+  h2 {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .close-btn {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  input::placeholder {
+    font-size: 16px;
+  }
+
+  .create-account-btn, .google-btn, .apple-btn, .facebook-btn {
+    font-size: 16px;
+    padding: 14px 10px;
+  }
+}
+

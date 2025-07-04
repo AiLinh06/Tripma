@@ -36,4 +36,33 @@
   font-size: 24px;
 }
 
+@media (max-width: 768px) {
+  .searchBar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .searchBar input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .searchBtn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchBar input {
+    font-size: 16px;
+  }
+
+  .searchBtn {
+    font-size: 18px;
+  }
+}
+
 
