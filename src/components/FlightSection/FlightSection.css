@@ -7,119 +7,56 @@ body, .flights-section, .flights-header, .see-all, .flight-card, .flight-info, .
 .flights-section {
   padding: 50px 60px;
   background-color: #f8f9fd;
-  margin-top: 0;
-  margin-bottom: 0;
-  
-
-}
-
-.flights-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 .flights-header h2 {
   font-size: 24px;
   font-weight: 600;
   color: #333;
-}
-
-.flights-header .highlight {
-  color: #605DEC;
-}
-
-.see-all {
-  font-size: 20px;
-  color: #605DEC;
-  text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .flights-grid {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 40px;
-  margin: 0 auto;
+  display: grid;
+  gap: 20px;
   max-width: 1000px;
-  padding-right: 850px;
-  padding-top: 20px;
+  margin: 0 auto;
 }
 
-h2{
-  padding-left: 180px;
-  padding-top: 280px;
+h2 {
+  text-align: center;
+  padding-top: 20px;
 }
 
 .flight-card {
   background: #fff;
   border: 1px solid #eee;
-  overflow: hidden; 
+  overflow: hidden;
   transition: transform 0.2s ease;
-  height: 100px;
   width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 14px 20px;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  margin-bottom: -50px;
-
+  gap: 20px;
 }
 
 .airline-logo {
   width: 60px;
   height: 60px;
   object-fit: contain;
-  margin-right: 64px;
-}
-
-.flight-card .flight-duration {
-  margin-right: 64px;
-  font-size: 18px;
-  color: #888;
-  min-width: 60px;
-  text-align: left;
-  padding-left: 32px;
 }
 
 .flight-details {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
   width: 100%;
 }
 
-.flight-time{
-  font-size: 20px;
-  margin-left: 80px;
+.flight-duration, .flight-time, .flight-stop, .flight-price {
+  font-size: 18px;
   color: #333;
-
-}
-
-.flight-stop {
-  color: #000000;
-  font-weight: lighter;
-  margin-left: auto;
-  padding-left: 100px;
-  font-size: 20px;
-}
-
-
-.flight-price {
-  font-size: 20px;;
-  color: #333;
-  padding-left: 120px;
-  text-align: right;
-  margin-left: auto;
-  margin-right: 30px;
-
 }
 
 @media (max-width: 768px) {
@@ -127,40 +64,18 @@ h2{
     padding: 30px 20px;
   }
 
-  h2 {
-    padding-left: 0;
-    padding-top: 150px;
+  .flight-card {
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .flights-grid {
-    padding-right: 0;
-    gap: 20px;
-  }
-
-  .flight-card {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    margin-bottom: 0;
-  }
-
   .flight-details {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    width: 100%;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .airline-logo {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .flight-time, .flight-stop, .flight-price, .flight-card .flight-duration {
-    margin: 0;
-    padding: 0;
-    text-align: left;
+    margin: 0 auto 10px;
   }
 }
 
@@ -169,11 +84,7 @@ h2{
     font-size: 20px;
   }
 
-  .flight-card {
-    padding: 15px;
-  }
-
-  .flight-time, .flight-stop, .flight-price, .flight-card .flight-duration {
+  .flight-duration, .flight-time, .flight-stop, .flight-price {
     font-size: 16px;
   }
 }

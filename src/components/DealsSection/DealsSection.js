@@ -42,7 +42,7 @@ const DealsSection = () => {
 
       <div className="deals-grid">
         {deals.map((deal, index) => (
-          <div className="deal-card" key={index}>
+          <div className={`deal-card ${index < 3 ? 'deal-card-shifted' : ''}`} key={index}>
             <img src={deal.image} alt={deal.title} />
             <div className="deal-info">
               <div className="deal-title-row">

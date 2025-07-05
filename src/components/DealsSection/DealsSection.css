@@ -5,9 +5,9 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
 }
 
 .deals-section {
-  padding: 50px 60px;
+  padding: 50px 60px 50px 120px;
   background-color: #f8f9fd;
-  margin-top: 400px;
+  margin-top: 120px;
   margin-bottom: 0;
 }
 
@@ -35,10 +35,9 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
 }
 
 .deals-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px 60px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
   margin: 0 auto;
   max-width: 1700px;
 }
@@ -49,11 +48,8 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   transition: transform 0.2s ease;
-  height: 540px;          
-  width: 500px;
   display: flex;
   flex-direction: column;
-
 }
 
 .deal-card:last-child {
@@ -61,7 +57,6 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
   aspect-ratio: unset;
   display: flex;
   flex-direction: column;
-  height: 520px; 
   width: 100%;
 }
 
@@ -144,6 +139,30 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
   font-weight: 400;
 }
 
+.deal-card-shifted {
+  width: 400px; /* Keep current width */
+  height: 400px; /* Keep current height */
+  margin-left: 120px; /* Shift further to the right */
+}
+
+@media (max-width: 1200px) {
+  .deals-grid {
+    gap: 40px;
+  }
+
+  .deal-card-shifted {
+    width: 100%; /* Reset width for smaller screens */
+    height: auto; /* Reset height for smaller screens */
+    margin-left: 0; /* Remove shift on smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .deals-grid {
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .deals-section {
     padding: 30px 20px;
@@ -161,11 +180,14 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
 
   .deal-card {
     width: 100%;
-    height: auto;
+  }
+
+  .deal-card-shifted {
+    margin-left: 0; /* Remove shift on smaller screens */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .deals-header h2 {
     font-size: 20px;
   }
@@ -174,11 +196,13 @@ body, .deals-section, .deals-header, .see-all, .deal-card, .deal-info, .deal-inf
     font-size: 18px;
   }
 
-  .deal-card {
-    height: auto;
-  }
-
   .deal-card img {
     height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .deal-card img {
+    height: 150px;
   }
 }

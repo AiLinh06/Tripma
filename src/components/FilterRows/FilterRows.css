@@ -1,11 +1,10 @@
 .filter-row {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   padding: 10px;
   background-color: #f9f9f9;
-  padding-left: 80px;
-  height: 50px;
-
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filter-row select {
@@ -15,6 +14,7 @@
   border-radius: 4px;
   background-color: #fff;
   cursor: pointer;
+  flex-grow: 1;
 }
 
 .filter-row select:focus {

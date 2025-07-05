@@ -63,11 +63,6 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-right">
-          <div className="footer-bottom">
-            <p>© 2025 Tripma. All rights reserved.</p>
-          </div>
-        </div>
       </div>
     </footer>
   );
